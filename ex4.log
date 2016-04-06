@@ -1,0 +1,141 @@
+vlog -f compile_questa_sv.f
+# ** Warning: (vlog-14) Failed to open "C:/Users/pal/Desktop/511433-Basnet-Rupesh-ex4/rupbas.mpf" specified by the MODELSIM environment variable.
+# No such file or directory. (errno = ENOENT)
+# QuestaSim vlog 10.0b Compiler 2011.05 May  5 2011
+# -- Compiling package alu_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.0p1 Built-in)
+# ** Note: (vlog-2286) Using implicit +incdir+C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src from import uvm_pkg
+# -- Compiling package agent_pkg
+# -- Importing package alu_pkg
+# -- Compiling interface alu_if
+# -- Compiling module top
+# -- Compiling module alu8
+# 
+# Top level modules:
+# 	top
+vsim -do "run -all" top
+# vsim -do {run -all} top 
+# ** Warning: (vsim-14) Failed to open "C:/Users/pal/Desktop/511433-Basnet-Rupesh-ex4/rupbas.mpf" specified by the MODELSIM environment variable.
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-7) Failed to open ini file "C:/Users/pal/Desktop/511433-Basnet-Rupesh-ex4/rupbas.mpf" in read mode.
+# Invalid argument. (errno = EINVAL)
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-14) Failed to open "C:/Users/pal/Desktop/511433-Basnet-Rupesh-ex4/rupbas.mpf" specified by the MODELSIM environment variable.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vopt-14) Failed to open "C:/Users/pal/Desktop/511433-Basnet-Rupesh-ex4/rupbas.mpf" specified by the MODELSIM environment variable.
+# No such file or directory. (errno = ENOENT)
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.alu_pkg
+# Loading work.agent_pkg
+# Loading work.top(fast)
+# Loading work.alu_if(fast)
+# Loading work.alu8(fast)
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test ...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ------------------------------------------------------------------
+# Name                       Type                        Size  Value
+# ------------------------------------------------------------------
+# test case 1 for alu        alu_test                    -     @458 
+#   env_1                    alu_env                     -     @471 
+#     alu_agent              alu_agent                   -     @489 
+#       a_driver             alu_driver                  -     @638 
+#         d_port             uvm_analysis_port           -     @662 
+#         rsp_port           uvm_analysis_port           -     @653 
+#         sqr_pull_port      uvm_seq_item_pull_port      -     @645 
+#       a_sequencer          alu_sequencer               -     @529 
+#         rsp_export         uvm_analysis_export         -     @536 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @630 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+#       ag_port              uvm_analysis_port           -     @520 
+#     e_monitor              alu_monitor                 -     @496 
+#       aport                uvm_analysis_port           -     @678 
+#     env_analysis           my_analysis_component       -     @507 
+#       analysis_port1       uvm_analysis_port           -     @698 
+#       analysis_port2       uvm_analysis_port           -     @690 
+#       fifo_d               uvm_tlm_analysis_fifo #(T)  -     @706 
+#         analysis_export    uvm_analysis_imp            -     @745 
+#         get_ap             uvm_analysis_port           -     @737 
+#         get_peek_export    uvm_get_peek_imp            -     @721 
+#         put_ap             uvm_analysis_port           -     @729 
+#         put_export         uvm_put_imp                 -     @713 
+#       fifo_m               uvm_tlm_analysis_fifo #(T)  -     @753 
+#         analysis_export    uvm_analysis_imp            -     @792 
+#         get_ap             uvm_analysis_port           -     @784 
+#         get_peek_export    uvm_get_peek_imp            -     @768 
+#         put_ap             uvm_analysis_port           -     @776 
+#         put_export         uvm_put_imp                 -     @760 
+# ------------------------------------------------------------------
+# 
+# DUT @ 30 operand_1=xxxxxxxx operand_2=xxxxxxxx op_code=xxxx shift_rotate=xxx result=zzzzzzzz carry = x
+# Analysis component retrieved from driver @ 30 operand_1=xxxxxxxx operand_2=xxxxxxxx op_code=xxxx shift_rotate=xxx
+# Analysis component retreived from monitor @ 30 operand_1=xxxxxxxx operand_2=xxxxxxxx op_code=xxxx shift_rotate=xxx reslut=zzzzzzzz carry=0
+# Sequence item @ 50 will be: operand_1=11101010 operand_2=00011100 op_code=0100 shift_rotate=110
+# DUT @ 50 operand_1=11101010 operand_2=00011100 op_code=0100 shift_rotate=110 result=zzzzzzzz carry = 0
+# Analysis component retrieved from driver @ 50 operand_1=11101010 operand_2=00011100 op_code=0100 shift_rotate=110
+# Analysis component retreived from monitor @ 50 operand_1=11101010 operand_2=00011100 op_code=0100 shift_rotate=110 reslut=zzzzzzzz carry=0
+# Sequence item @ 70 will be: operand_1=01000000 operand_2=10001010 op_code=1001 shift_rotate=101
+# DUT @ 70 operand_1=01000000 operand_2=10001010 op_code=1001 shift_rotate=101 result=00000010 carry = 0
+# Analysis component retrieved from driver @ 70 operand_1=01000000 operand_2=10001010 op_code=1001 shift_rotate=101
+# Analysis component retreived from monitor @ 70 operand_1=01000000 operand_2=10001010 op_code=1001 shift_rotate=101 reslut=00000010 carry=0
+# Sequence item @ 90 will be: operand_1=01111011 operand_2=11101100 op_code=0000 shift_rotate=010
+# DUT @ 90 operand_1=01111011 operand_2=11101100 op_code=0000 shift_rotate=010 result=zzzzzzzz carry = 0
+# Analysis component retrieved from driver @ 90 operand_1=01111011 operand_2=11101100 op_code=0000 shift_rotate=010
+# Analysis component retreived from monitor @ 90 operand_1=01111011 operand_2=11101100 op_code=0000 shift_rotate=010 reslut=zzzzzzzz carry=0
+# Sequence item @ 110 will be: operand_1=11100101 operand_2=01010010 op_code=0111 shift_rotate=011
+# DUT @ 110 operand_1=11100101 operand_2=01010010 op_code=0111 shift_rotate=011 result=00011100 carry = 0
+# Analysis component retrieved from driver @ 110 operand_1=11100101 operand_2=01010010 op_code=0111 shift_rotate=011
+# Analysis component retreived from monitor @ 110 operand_1=11100101 operand_2=01010010 op_code=0111 shift_rotate=011 reslut=00011100 carry=0
+# Sequence item @ 130 will be: operand_1=11111101 operand_2=11100111 op_code=1110 shift_rotate=100
+# DUT @ 130 operand_1=11111101 operand_2=11100111 op_code=1110 shift_rotate=100 result=zzzzzzzz carry = 0
+# Analysis component retrieved from driver @ 130 operand_1=11111101 operand_2=11100111 op_code=1110 shift_rotate=100
+# Analysis component retreived from monitor @ 130 operand_1=11111101 operand_2=11100111 op_code=1110 shift_rotate=100 reslut=zzzzzzzz carry=0
+# Sequence item @ 150 will be: operand_1=01010000 operand_2=01010101 op_code=1100 shift_rotate=110
+# DUT @ 150 operand_1=01010000 operand_2=01010101 op_code=1100 shift_rotate=110 result=zzzzzzzz carry = 0
+# Analysis component retrieved from driver @ 150 operand_1=01010000 operand_2=01010101 op_code=1100 shift_rotate=110
+# Analysis component retreived from monitor @ 150 operand_1=01010000 operand_2=01010101 op_code=1100 shift_rotate=110 reslut=zzzzzzzz carry=0
+# Sequence item @ 170 will be: operand_1=10000000 operand_2=11101110 op_code=0111 shift_rotate=101
+# DUT @ 170 operand_1=10000000 operand_2=11101110 op_code=0111 shift_rotate=101 result=00000100 carry = 0
+# Analysis component retrieved from driver @ 170 operand_1=10000000 operand_2=11101110 op_code=0111 shift_rotate=101
+# Analysis component retreived from monitor @ 170 operand_1=10000000 operand_2=11101110 op_code=0111 shift_rotate=101 reslut=00000100 carry=0
+# Sequence item @ 190 will be: operand_1=11010110 operand_2=11001100 op_code=0010 shift_rotate=011
+# DUT @ 190 operand_1=11010110 operand_2=11001100 op_code=0010 shift_rotate=011 result=11011110 carry = 0
+# Analysis component retrieved from driver @ 190 operand_1=11010110 operand_2=11001100 op_code=0010 shift_rotate=011
+# Analysis component retreived from monitor @ 190 operand_1=11010110 operand_2=11001100 op_code=0010 shift_rotate=011 reslut=11011110 carry=1
+# Sequence item @ 210 will be: operand_1=00101101 operand_2=00001111 op_code=0101 shift_rotate=100
+# DUT @ 210 operand_1=00101101 operand_2=00001111 op_code=0101 shift_rotate=100 result=00111100 carry = 1
+# Analysis component retrieved from driver @ 210 operand_1=00101101 operand_2=00001111 op_code=0101 shift_rotate=100
+# Analysis component retreived from monitor @ 210 operand_1=00101101 operand_2=00001111 op_code=0101 shift_rotate=100 reslut=00111100 carry=0
+# Sequence item @ 230 will be: operand_1=01001011 operand_2=00101101 op_code=0000 shift_rotate=001
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 210: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    3
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_root.svh(392)
+#    Time: 210 ns  Iteration: 55  Instance: /top
+# 1
+# Break at C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_root.svh line 392
+# Project file C:/Users/pal/Desktop/511433-Basnet-Rupesh-ex4/rupbas.mpf is write protected, data cannot be saved.
+# Unable to save project.
+# ** Warning: (vsim-31) Unable to unlink file "C:\Users\pal\Desktop\511433-Basnet-Rupesh-ex4\work/_opt__lock".
+# No such file or directory. (errno = ENOENT)
